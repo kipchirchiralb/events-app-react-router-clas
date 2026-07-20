@@ -1,5 +1,5 @@
 :root {
-  --text: #5b5168;
+  --text: #0c0218;
   --text-h: #1f1633;
   --bg: #f7f2ff;
   --border: #e7dcff;
@@ -8,8 +8,8 @@
   --accent-bg: rgba(124, 58, 237, 0.1);
   --accent-border: rgba(124, 58, 237, 0.35);
   --shadow: rgba(69, 41, 126, 0.15) 0 16px 35px -12px;
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -31,8 +31,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #e3dcf8;
-    --text-h: #f8f5ff;
+    --text: #030108;
+    --text-h: #010002;
     --bg: #140f24;
     --border: #342a4f;
     --code-bg: #241c3c;
@@ -84,7 +84,10 @@ nav a {
   color: var(--text-h);
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
 }
 
 nav a:hover {
@@ -149,7 +152,9 @@ main > div > div {
   background: linear-gradient(145deg, #ffffff, #f8f4ff);
   box-shadow: 0 10px 24px rgba(86, 53, 153, 0.08);
   text-align: left;
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 main > div > div:hover {
